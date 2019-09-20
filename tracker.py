@@ -381,6 +381,21 @@ class Tracker(object):
                     self.axes.origin = (x, y)
         elif event == cv2.EVENT_LBUTTONUP:
             self.dragItem = 0
+
+    # def trackBg(self, outputName="", resizeWidth=0):
+    #         """Tracks an object based on the HSV bounds supplied by the user."""
+    #     if self.capture is None:
+    #         raise CaptureError("Video capture not initialized. Use setVideo(<videoPath>) to initialize.")
+        
+    #     if resizeWidth:
+    #         self.height = int(float(resizeWidth)/self.width*self.height)
+    #         self.width = int(resizeWidth)
+    #         self.axes = Axes(self.width, self.height)
+    #         self.scaleLine = ((self.axes.origin[0] - 50, self.axes.origin[1] - 50), (self.axes.origin[0] - 50, self.axes.origin[1] - 100))
+            
+    #     if outputName != "":
+    #         fourcc = cv2.VideoWriter_fourcc(*"MJPG")
+    #         out = cv2.VideoWriter(outputName, fourcc, 30.0, (self.width, self.height))        
     
     def release(self):
         self.capture.release()

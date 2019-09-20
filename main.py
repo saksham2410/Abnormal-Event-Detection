@@ -2,7 +2,7 @@
 from tracker import Tracker
 
 # Create Tracker instance with parameters
-t = Tracker(videoPath="try6.mov", hsvLow=(39, 0, 27), hsvHigh=(130, 255, 74))
+t = Tracker(videoPath="final_edit.mp4", hsvLow=(39, 0, 27), hsvHigh=(130, 255, 74))
 
 # Alternatively:
 #   t = Tracker()
